@@ -1,0 +1,83 @@
+@reference "../index.css";
+
+@layer components {
+  .form-grid {
+    @apply grid gap-4 md:grid-cols-2 xl:grid-cols-3;
+  }
+
+  .form-grid-wide {
+    @apply grid gap-4 md:grid-cols-2;
+  }
+
+  .form-field {
+    @apply flex flex-col;
+  }
+
+  .form-field-full {
+    @apply md:col-span-2 xl:col-span-3;
+  }
+
+  .input-label {
+    @apply mb-2 block text-sm font-bold text-[color:var(--color-text-main)];
+  }
+
+  .input-hint {
+    @apply mt-2 text-xs text-[color:var(--color-text-soft)];
+  }
+
+  .input-error {
+    @apply mt-2 min-h-[1.25rem] text-sm font-medium text-red-500;
+  }
+
+  .input-error-hidden {
+    @apply mt-2 min-h-[1.25rem] text-sm text-transparent;
+  }
+
+  .input-field {
+    @apply w-full rounded-2xl border border-[color:var(--color-border-soft)] bg-white px-4 py-3 text-[color:var(--color-text-main)] outline-none placeholder:text-[color:var(--color-text-faint)] transition focus:border-brand-300 focus:ring-4 focus:ring-brand-100;
+  }
+
+  .input-field-sm {
+    @apply px-4 py-2.5;
+  }
+
+  .input-field-error {
+    @apply border-red-300 focus:border-red-300 focus:ring-red-100;
+  }
+
+  .input-field-success {
+    @apply border-emerald-300 focus:border-emerald-300 focus:ring-emerald-100;
+  }
+
+  .select-field {
+    @apply w-full rounded-2xl border border-[color:var(--color-border-soft)] bg-white px-4 py-3 text-[color:var(--color-text-main)] outline-none transition focus:border-brand-300 focus:ring-4 focus:ring-brand-100;
+  }
+
+  .select-field-sm {
+    @apply px-4 py-2.5;
+  }
+
+  .textarea-field {
+    @apply min-h-28 w-full rounded-2xl border border-[color:var(--color-border-soft)] bg-white px-4 py-3 text-[color:var(--color-text-main)] outline-none placeholder:text-[color:var(--color-text-faint)] transition focus:border-brand-300 focus:ring-4 focus:ring-brand-100;
+  }
+
+  .textarea-field-sm {
+    @apply min-h-24 px-4 py-2.5;
+  }
+
+  .field-card {
+    @apply rounded-[1.75rem] border border-white/60 bg-white/90 p-4 shadow-[var(--shadow-soft)];
+  }
+
+  .field-card-compact {
+    @apply rounded-[1.5rem] border border-white/60 bg-white/90 p-4 shadow-[var(--shadow-soft)];
+  }
+
+  .form-section {
+    @apply space-y-4;
+  }
+
+  .form-actions {
+    @apply flex flex-col gap-3 border-t border-brand-100 pt-4 sm:flex-row sm:flex-wrap;
+  }
+}

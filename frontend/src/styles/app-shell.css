@@ -1,0 +1,59 @@
+@reference "../index.css";
+
+@layer components {
+  .app-shell {
+    @apply min-h-screen bg-transparent;
+  }
+
+  .page-wrap {
+    @apply min-h-screen px-3 py-3 sm:px-4 sm:py-4 lg:px-5 lg:py-5;
+  }
+
+  .dashboard-layout {
+    @apply mx-auto grid max-w-7xl gap-4 lg:grid-cols-[280px_minmax(0,1fr)];
+  }
+
+  .dashboard-layout-compact {
+    @apply mx-auto grid max-w-7xl gap-4 lg:grid-cols-[260px_minmax(0,1fr)];
+  }
+
+  .sidebar-shell {
+    @apply rounded-[2rem] bg-[linear-gradient(180deg,#ede4ff_0%,#e4f0ff_100%)] p-4 shadow-[var(--shadow-card)] lg:flex lg:flex-col;
+  }
+
+  .sidebar-panel {
+    @apply rounded-[1.75rem] bg-white/75 p-4 shadow-sm backdrop-blur-sm;
+  }
+
+  .content-shell {
+    @apply min-w-0 rounded-[2rem] bg-white/70 p-3 shadow-[var(--shadow-soft)] backdrop-blur-sm sm:p-4 lg:flex lg:flex-col lg:p-5;
+  }
+
+  .content-panel {
+    @apply min-w-0 rounded-[2rem] border border-[color:var(--color-border-soft)] bg-white p-4 shadow-[var(--shadow-card)] sm:p-5;
+  }
+
+  .content-panel-scroll {
+    @apply min-h-0 flex-1 overflow-y-auto pr-1;
+  }
+
+  .topbar-mobile {
+    @apply mb-3 flex flex-wrap items-center justify-between gap-3 lg:hidden;
+  }
+
+  .panel-header {
+    @apply mb-4 border-b border-brand-100 pb-4;
+  }
+
+  .panel-actions {
+    @apply mt-4 border-t border-brand-100 pt-4;
+  }
+
+  .empty-state {
+    @apply flex min-h-[260px] flex-col items-center justify-center rounded-[2rem] border border-dashed border-brand-200 bg-white/80 p-8 text-center shadow-[var(--shadow-soft)];
+  }
+
+  .empty-icon {
+    @apply mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-brand-100 text-3xl shadow-sm;
+  }
+}

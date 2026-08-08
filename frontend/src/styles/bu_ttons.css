@@ -1,0 +1,53 @@
+@reference "../index.css";
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-brand-500 px-5 py-3 text-sm font-bold text-white shadow-[var(--shadow-soft)] transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-[var(--shadow-card-hover)] focus:outline-none focus:ring-4 focus:ring-brand-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-bold text-brand-700 ring-1 ring-brand-200 transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-100;
+  }
+
+  .btn-soft {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-brand-100 px-4 py-2.5 text-sm font-semibold text-brand-700 transition duration-200 ease-out hover:bg-brand-200 focus:outline-none focus:ring-4 focus:ring-brand-100;
+  }
+
+  .btn-accent {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-pink-400 px-5 py-3 text-sm font-bold text-white shadow-[var(--shadow-soft)] transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-pink-500 focus:outline-none focus:ring-4 focus:ring-pink-100;
+  }
+
+  .btn-mint {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-emerald-400 px-5 py-3 text-sm font-bold text-white shadow-[var(--shadow-soft)] transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-emerald-500 focus:outline-none focus:ring-4 focus:ring-emerald-100;
+  }
+
+  .btn-ghost {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-transparent px-5 py-3 text-sm font-bold text-[color:var(--color-text-main)] transition duration-200 ease-out hover:bg-white/70 focus:outline-none focus:ring-4 focus:ring-brand-100;
+  }
+
+  .btn-icon {
+    @apply inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-[color:var(--color-text-main)] shadow-sm ring-1 ring-brand-100 transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-50 focus:outline-none focus:ring-4 focus:ring-brand-100;
+  }
+
+  .btn-block {
+    @apply w-full;
+  }
+
+  .btn-sm {
+    @apply min-h-9 px-4 py-2 text-sm;
+  }
+
+  .btn-lg {
+    @apply min-h-12 px-6 py-3.5 text-base;
+  }
+
+  .btn-primary:disabled,
+  .btn-secondary:disabled,
+  .btn-soft:disabled,
+  .btn-accent:disabled,
+  .btn-mint:disabled,
+  .btn-ghost:disabled,
+  .btn-icon:disabled {
+    @apply pointer-events-none opacity-50;
+  }
+}

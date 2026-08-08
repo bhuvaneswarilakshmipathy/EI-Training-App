@@ -1,0 +1,79 @@
+@reference "../index.css";
+
+@layer components {
+  .page-card {
+    @apply rounded-[2rem] border border-[color:var(--color-border-soft)] bg-white p-4 shadow-[var(--shadow-card)] transition duration-200 sm:p-5;
+  }
+
+  .page-card-hover {
+    @apply hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)];
+  }
+
+  .section-card {
+    @apply rounded-[1.75rem] border border-white/60 bg-white/90 p-4 shadow-[var(--shadow-soft)] sm:p-5;
+  }
+
+  .section-card-hover {
+    @apply transition duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)];
+  }
+
+  .info-card {
+    @apply rounded-[1.5rem] border border-white/60 bg-white/85 p-4 shadow-[var(--shadow-soft)];
+  }
+
+  .result-card {
+    @apply rounded-[1.75rem] border border-white/60 bg-white p-5 shadow-[var(--shadow-soft)];
+  }
+
+  .profile-card {
+    @apply rounded-[1.75rem] border border-[color:var(--color-border-soft)] bg-white p-5 shadow-[var(--shadow-soft)];
+  }
+
+  .student-card {
+    @apply rounded-[1.75rem] border border-[color:var(--color-border-soft)] bg-white p-4 text-left shadow-[var(--shadow-soft)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)];
+  }
+
+  .student-card-compact {
+    @apply rounded-[1.5rem] border border-[color:var(--color-border-soft)] bg-white p-3 text-left shadow-[var(--shadow-soft)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)];
+  }
+
+  .action-card {
+    @apply rounded-[1.75rem] border border-white/60 bg-white/95 p-5 shadow-[var(--shadow-soft)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-card-hover)];
+  }
+
+  .metric-card {
+    @apply rounded-[1.5rem] bg-white/80 px-4 py-3 shadow-sm ring-1 ring-brand-100;
+  }
+
+  .card-avatar {
+    @apply flex items-center justify-center rounded-full bg-[linear-gradient(135deg,#ffe7f2_0%,#e5f3ff_100%)] shadow-sm;
+  }
+
+  .card-avatar-sm {
+    @apply h-12 w-12 text-xl;
+  }
+
+  .card-avatar-md {
+    @apply h-16 w-16 text-3xl;
+  }
+
+  .card-avatar-lg {
+    @apply h-24 w-24 text-5xl;
+  }
+
+  .card-label {
+    @apply text-xs font-bold uppercase tracking-wide text-[color:var(--color-text-soft)];
+  }
+
+  .card-value {
+    @apply mt-2 text-base font-semibold text-[color:var(--color-text-main)];
+  }
+
+  .card-title {
+    @apply text-lg font-extrabold text-[color:var(--color-text-main)];
+  }
+
+  .card-subtitle {
+    @apply mt-2 text-sm leading-6 text-[color:var(--color-text-soft)];
+  }
+}
